@@ -1,0 +1,1385 @@
+
+/* Page aaram se scroll hoga */
+html {
+    scroll-behavior: smooth;
+}
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d3436;
+}
+
+
+
+.navbar-brand:hover .pascal-sparkle-icon {
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* Navbar General Styling */
+.custom-nav {
+    background-color: #ffffff;
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Brand Logo Styling */
+.navbar-brand {
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.brand-p {
+    color: #C5A021;
+    font-size: 1.5rem;
+}
+
+.jewelry-text {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    color: #666;
+}
+
+/* Nav Links */
+.nav-link {
+    color: #333 !important;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #C5A021 !important;
+}
+
+/* Mega Menu Enhancements */
+.dropdown-mega {
+    position: static;
+}
+
+.dropdown-mega .dropdown-menu {
+    border-top: 3px solid #C5A021 !important;
+    border-radius: 0;
+    background: #fdfdfd;
+}
+
+.text-gold {
+    color: #C5A021;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.dropdown-item {
+    transition: transform 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #C5A021;
+    transform: translateX(5px);
+}
+
+/* Contact Button */
+.btn-gold {
+    background-color: #C5A021;
+    border: 1px solid #C5A021;
+    border-radius: 0;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.btn-gold:hover {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+/* Cart Icon */
+.cart-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#cart-count {
+    background:#C5A021;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+/* Top Bar Animation */
+.top-bar {
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+
+
+.mega-brand-title {
+    font-family: 'Cinzel', serif;
+    color: #C5A021;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.mega-links li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 12px;
+    display: block;
+    padding: 5px 0;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.mega-links li a:hover {
+    color: #C5A021;
+    padding-left: 8px;
+}
+
+/* Brand Showcase Cards */
+.brand-header {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    letter-spacing: 4px;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.5s;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body-luxury {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.card-body-luxury span {
+    font-size: 10px;
+    color: #C5A021;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-body-luxury h5 {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Hover par card highlight effect */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(197, 160, 33, 0.2);
+}
+/* carousel*/
+
+
+/* --- Final 100% Uniform Carousel Fix --- */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    padding: 20px 0 !important;
+    
+    /* WIDTH FIX: Isse har slide ka box EXACT ek jaisa rahega */
+    width: 600px !important; 
+    min-width: 600px !important; /* Forcefully same width */
+    max-width: 90% !important; 
+    
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    bottom: 25% !important;
+    
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption {
+        width: 100% !important;
+        min-width: unset !important;
+        bottom: 15% !important;
+        padding: 15px 10px !important;
+    }
+}
+
+
+.btn-gold {
+    background-color: #C5A021;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #a3851b;
+    color: white;
+}
+
+/* Modal Styling */
+.modal-content {
+    overflow: hidden;
+    border-radius: 0;
+}
+.text-gold { color: #C5A021; }
+
+/* --- Final Uniform Carousel Fix --- */
+.hero-img {
+    height: 85vh !important;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%); /* Luxury look ke liye thoda dark */
+}
+        
+/* Highlights */
+       
+.pascal-highlights {
+    padding: 80px 10%;
+    background-color: #fcfcfc; /* Premium off-white */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #b8860b; /* Golden tone */
+    font-weight: bold;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #222;
+    margin-top: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background: #b8860b;
+    margin: 15px auto;
+}
+
+/* Grid Layout */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(184, 134, 11, 0.15);
+}
+
+.icon-box {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+.text-gold { color: #C5A021 !important; }
+.bg-gold { background-color: #C5A021 !important; }
+
+.about-img-container {
+    width: 85%;
+    height: 500px;
+    z-index: 1;
+}
+
+.main-about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.floating-img {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+    border: 8px solid white;
+}
+
+.experience-badge {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    z-index: 3;
+    min-width: 140px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.btn-dark-luxury {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-outline-gold {
+    border: 1px solid #C5A021;
+    color: #C5A021;
+    padding: 12px 30px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* --- Professional Modal Enhancements --- */
+.ls-2 { letter-spacing: 2px; }
+.leading-relaxed { line-height: 1.7; }
+
+.mission-icon {
+    font-size: 50px;
+    filter: drop-shadow(0 5px 15px rgba(197, 160, 33, 0.4));
+    animation: pulseIcon 2s infinite;
+}
+
+@keyframes pulseIcon {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.modal-content {
+    transition: transform 0.3s ease-out;
+}
+
+/* Glass effect for the Mission side */
+.bg-dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%) !important;
+}
+
+.italic { font-style: italic; }
+
+/* Responsiveness Fix */
+@media (max-width: 768px) {
+    .mission-icon { font-size: 35px; }
+    .col-md-5 { padding: 30px !important; }
+}
+
+/* Mobile Responsive Fix for About Images */
+@media (max-width: 768px) {
+    .about-composite-container {
+        padding-bottom: 80px; /* Space for the overlap image */
+    }
+    
+    .main-img-box {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .overlap-img-box {
+        width: 150px !important; /* Mobile par size thoda chota */
+        height: 180px !important;
+        bottom: -40px !important; /* Thoda mazeed niche */
+        right: 10px !important;
+        border-width: 5px !important; /* Border patla */
+    }
+
+    .experience-card {
+        top: -15px !important;
+        left: 10px !important;
+        padding: 10px 15px !important;
+        min-width: 100px !important;
+    }
+    
+    .experience-card h2 { font-size: 1.2rem; }
+}
+
+.btn-dark-luxury:hover { background: #C5A021; }
+.btn-outline-gold:hover { background: #C5A021; color: white; }
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .about-img-container {
+        width: 100%;
+        height: 350px;
+    }
+    .experience-badge {
+        left: 20px;
+        top: 20px;
+    }
+}
+/* prdouct styling*/
+
+/* Product Main Image Frame */
+.product-display-frame {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    overflow: hidden;
+    border: none !important; /* Border bilkul khatam */
+    border-radius: 20px;     /* Sirf curves */
+}
+
+.product-display-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* Image poori space fill karegi bina kharab huye */
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Hover Effect on Main Image */
+.product-display-frame:hover img {
+    transform: scale(1.08);  /* Halka sa zoom hover par */
+}
+
+/* Thumbnails */
+.p-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: none !important; /* No border */
+    border-radius: 10px;     /* Curved corners */
+    transition: 0.3s;
+}
+
+.p-thumb:hover {
+    opacity: 0.8;            /* Hover par halki si transparency */
+}
+
+.p-thumb.active {
+    box-shadow: 0 0 0 3px #C5A021; /* Sirf active par gold outline */
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .product-display-frame {
+        height: 350px; /* Mobile par height adjust ki hai taake screen par fit aaye */
+    }
+    .p-thumb {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/* Luxury Buttons */
+.btn-luxury {
+    background-color: #C5A021;
+    color: white;
+    border-radius: 0;
+    transition: 0.3s;
+    border: 1px solid #C5A021;
+}
+
+.btn-luxury:hover {
+    background-color: #a3841a;
+    color: white;
+}
+
+.btn-outline-luxury {
+    border: 1px solid #C5A021;
+    color: #C5A021;
+    border-radius: 0;
+}
+
+.btn-outline-luxury:hover {
+    background-color: #C5A021;
+    color: white;
+}
+
+/* Form Styling */
+.custom-input {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 12px;
+    background-color: white;
+}
+
+.custom-input:focus {
+    border-color: #C5A021;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+/* Scrollbar hide for thumbnails */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #C5A021;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-display-frame { height: 350px; }
+    .display-5 { font-size: 2rem; }
+    .p-thumb { width: 60px; height: 60px; }
+}
+/* brands stylings*/
+/* Brands Section Luxury Styles */
+#brands {
+    background-color: #ffffff;
+}
+
+.luxury-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #fff;
+    overflow: hidden;
+}
+
+.luxury-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Image Box and Overlay */
+.card-img-box {
+    position: relative;
+    overflow: hidden;
+    height: 350px; /* Fixed height for symmetry */
+}
+
+.card-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.luxury-card:hover .card-img-box img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.luxury-card:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Badges and Typography */
+.luxury-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #C5A021;
+    color: white;
+    z-index: 2;
+    font-weight: 600;
+}
+
+.bg-gold { background-color: #C5A021 !important; }
+
+.brand-sub {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #C5A021;
+    font-weight: 600;
+    display: block;
+}
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background: #C5A021;
+    margin-top: 15px;
+}
+
+/* Modal Improvements */
+.modal-content {
+    border-radius: 0;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.ls-2 { letter-spacing: 2px; }
+
+.btn-outline-white {
+    border: 1px solid white;
+    color: white;
+    border-radius: 0;
+    padding: 10px 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: black;
+}
+/* brands categories */
+/* brands cards sub categories styling*/
+
+        .cart-icon { position: relative; cursor: pointer; font-size: 24px; }
+        #cart-count { position: absolute; top: -10px; right: -10px; background: red; color: white; font-size: 12px; padding: 2px 6px; border-radius: 50%; }
+
+        /* --- Card --- */
+       /* Cards ko bara aur premium dikhane ke liye */
+.card { 
+    width: 100%; 
+    max-width: 420px; /* Pehle 320px tha, ab kafi bara dikhega */
+    margin: 0 auto; /* Card center mein rahega */
+    background: white; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Shadow thori gehri taky utha hua dikhe */
+    transition: 0.3s ease;
+}
+
+.card-image { 
+    width: 100%; 
+    height: 320px; /* Image ki height barha di taake jewelry wazeh dikhe */
+    object-fit: cover; 
+}
+
+.card-content { 
+    padding: 30px; 
+    text-align: center; 
+}
+.card-product-title {
+        font-family: 'Cinzel', serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #222;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .card-product-price {
+        color: #C5A021;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .text-gold { color: #C5A021; }
+    .ls-3 { letter-spacing: 3px; }
+    .underline {
+        height: 3px;
+        width: 80px;
+        background: #C5A021;
+        border-radius: 2px;
+    }
+    /* Card Hover Effect */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+/* Row ke darmiyan gap barhane ke liye */
+.row {
+    --bs-gutter-y: 2.5rem; /* Vertical gap barha diya */
+}
+        .btn-main { 
+            width: 100%; padding: 14px; border: none; border-radius: 12px; 
+            font-weight: bold; cursor: pointer; transition: 0.3s; 
+            background:  #C5A021; color: white; font-size: 14px;
+        }
+        .btn-main:hover { opacity: 0.9; transform: scale(0.98); }
+
+        /* --- Modals --- */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+            display: none; justify-content: center; align-items: center;
+            z-index: 9999; backdrop-filter: blur(5px);
+        }
+        .modal-box { background: white; width: 90%; max-width: 400px; padding: 30px; border-radius: 25px; text-align: center; }
+
+        /* --- Cart Panel --- */
+        #cart-panel {
+            position: fixed; right: -350px; top: 0; width: 320px; height: 100%;
+            background: white; box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            transition: 0.4s; z-index: 10000; padding: 20px;
+            display: flex; flex-direction: column;
+            box-sizing: border-box;
+        }
+        #cart-panel.active { right: 0; }
+        
+        /* Scroll Issue Resolved Here */
+        #cart-list { 
+            flex-grow: 1; 
+            margin-top: 20px; 
+            overflow-y: auto; 
+            padding-right: 5px;
+        }
+        
+        .cart-item { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 0; 
+            border-bottom: 1px solid #eee; 
+        }
+
+        .total-section {
+            padding: 15px 0;
+            border-top: 2px solid  #C5A021;
+            margin-top: 10px;
+        }
+
+        .btn-buy-now-cart {
+            background: #C5A021; color:white; border: 2px solid var(--dark);
+            padding: 15px; border-radius: 12px; font-weight: bold; cursor: pointer;
+            margin-top: 10px; width: 100%; display: none;
+        }
+        .success-icon-box {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.tick-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* gallery styling*/
+/* Gallery Design */
+.gallery-section { padding: 60px 0; background: #fff; }
+.section-title { text-align: center; font-family: 'Cinzel', serif; color: #333; margin-bottom: 40px; font-size: 2.5rem; }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    padding: 0 20px;
+}
+/* Gallery Grid Fix */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    align-items: start; /* Taake cards line mein rahein */
+}
+
+/* Gallery Card - Perfect Proportion */
+.gallery-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4; /* Isse har card ka size (proportion) ek jaisa rahega */
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f4f4f4; /* Image load hone se pehle ka color */
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ye image ko box ke andar crop karke fit karega */
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+/* Hover Effect Fix */
+.gallery-card:hover img {
+    transform: scale(1.1);
+    filter: blur(4px) brightness(40%);
+}
+
+/* Tags Fix (Jo humne pehle design kiye) */
+.card-tag, .discount-tag {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: #C5A021;
+    color: white;
+    padding: 5px 12px;
+    font-size: 11px;
+    z-index: 5;
+    border-left: 4px solid #fff;
+    transition: 0.4s ease;
+}
+
+.gallery-card:hover .card-tag, 
+.gallery-card:hover .discount-tag {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4); /* Light dark overlay initially */
+    opacity: 0;
+    transition: 0.5s ease;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gallery-card:hover .overlay { opacity: 1; }
+
+.overlay h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 10px; transform: translateY(20px); transition: 0.4s; }
+.overlay p { font-size: 0.9rem; margin-bottom: 20px; transform: translateY(20px); transition: 0.5s; }
+.gallery-card:hover h3, .gallery-card:hover p { transform: translateY(0); }
+
+.buy-btn {
+    background: #C5A021;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover { background: #a3841a; }
+
+/* Modals & Form Styling */
+/* Modal Overlay - Glassmorphism Effect */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px); /* Background blur premium lagta hai */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.form-container, .success-box {
+    background: #ffffff;
+    padding: 45px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    text-align: center;
+    border-top: 6px solid #C5A021; /* Theme Gold Color */
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    animation: modalSlide 0.4s ease-out;
+}
+
+@keyframes modalSlide {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Close Button Styling */
+.close-modal {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 28px;
+    color: #999;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.close-modal:hover { color: #C5A021; }
+
+/* Text & Headings */
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#selected-product {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #C5A021;
+    padding-bottom: 10px;
+}
+
+/* Input Fields Styling */
+#orderForm input, #orderForm textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    background: #fcfcfc;
+    border-radius: 0; /* Luxury sharp look */
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+#orderForm input:focus, #orderForm textarea:focus {
+    border-color: #C5A021;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(197, 160, 33, 0.2);
+}
+
+/* Confirm Order Button */
+.confirm-order-btn {
+    width: 100%;
+    padding: 16px;
+    background: #111; /* Dark Contrast */
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.confirm-order-btn:hover {
+    background: #C5A021;
+    box-shadow: 0 10px 20px rgba(197, 160, 33, 0.3);
+}
+
+/* Success Modal Tick Styling */
+.tick-circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #C5A021;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #C5A021;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-main {
+    background: #C5A021;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Comparison Section Styling */
+.comparison-container {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif; /* Luxury Font */
+    color: #333;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 30px;
+    border: 1px solid #C5A021;
+    background: transparent;
+    color: #C5A021;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px; /* Boxy premium look */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.tab-btn:hover {
+    background: rgba(197, 160, 33, 0.1);
+}
+
+.tab-btn.active {
+    background: #C5A021;
+    color: white;
+    box-shadow: 0 4px 15px rgba(197, 160, 33, 0.3);
+}
+
+/* Detail Box */
+.tab-content {
+    display: none; /* Initially hide all */
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active-content {
+    display: block;
+}
+
+.detail-box {
+    background: #fff;
+    padding: 50px;
+    border-radius: 0; /* Flat luxury design */
+    border-left: 5px solid #C5A021; /* Gold Accent */
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.detail-box h3 { 
+    font-family: 'Cinzel', serif;
+    color: #C5A021; 
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.detail-box p { 
+    margin: 18px 0; 
+    line-height: 1.8; 
+    color: #555; 
+    border-bottom: 1px solid #f0f0f0; 
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.detail-box p strong {
+    color: #333;
+    font-weight: 600;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* contact us styling*/
+/* Typography & Core Colors */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap');
+
+.serif-font { font-family: 'Cinzel', serif; }
+body{font-family: 'Montserrat', sans-serif; }
+
+
+
+/* Glassmorphism Effect */
+.luxury-glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.border-end-glass { border-right: 1px solid rgba(212, 175, 55, 0.1); }
+
+/* Interactive Items */
+.luxury-item {
+    display: flex; align-items: center; text-decoration: none !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.luxury-item:hover { transform: translateX(15px) scale(1.02); }
+
+.item-icon-wrapper {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, #cf9f2d, #C5A021);
+    border-radius: 12px; display: flex; align-items: center; justify-content: center;
+    color: #000; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(184, 138, 26, 0.3);
+}
+
+/* Inputs */
+.lux-input {
+    background: rgba(255,255,255,0.02) !important;
+    border: 1px solid rgba(212,175,55,0.2) !important;
+    color: rgb(219, 177, 40) !important; border-radius: 0 !important;
+}
+.lux-input:focus { border-color:#C5A021 !important; box-shadow: none; }
+.form-floating label { color:#C5A021;  }
+.lux-input:focus + label { color: none !important; }
+
+/* Button Royal */
+.btn-royal-gold {
+    background: linear-gradient(90deg, #C5A021 #f9f295, #C5A021);
+    color: #000; border: none; padding: 18px; font-weight: bold;
+    letter-spacing: 2px; transition: 0.5s; box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+}
+.btn-royal-gold:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(212,175,55,0.5); letter-spacing: 3px; }
+
+/* Stars */
+.luxury-stars label { font-size: 1.8rem; color: #333; cursor: pointer; transition: 0.3s; }
+.luxury-stars input:checked ~ label, .luxury-stars label:hover, .luxury-stars label:hover ~ label { color: #f9f295; }
+
+/* Decorative Background Glow */
+.gold-glow-orb {
+    position: absolute; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%);
+    top: -10%; right: -5%; pointer-events: none;
+}
+
+@media (max-width: 991px) {
+    .border-end-glass { border-right: none; border-bottom: 1px solid rgba(8, 8, 8, 0.1); }
+}
+/* footer stylung*/
+.pscal-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #C5A021; /* Gold Accent */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color:#C5A021;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+    color: #C5A021;
+    padding-left: 5px;
+}
+
+/* Newsletter Input */
+.subscribe-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: none;
+    width: 70%;
+    outline: none;
+}
+
+.subscribe-form button {
+    background-color:#C5A021;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #C5A021;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Responsive adjustment */
+/* Newsletter Section Container */
+.footer-section.newsletter {
+    max-width: 350px; /* Isay bikharny se bachay ga */
+}
+
+/* Form Styling - Input aur Button ko jorne ke liye */
+.subscribe-form {
+    display: flex;
+    align-items: stretch; /* Dono ki height barabar rakhega */
+    margin-top: 15px;
+    height: 45px; /* Fixed height for a clean look */
+}
+
+.subscribe-form input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05); /* Subtle dark background */
+    border: 1px solid #444;
+    border-right: none; /* Button ke sath join karne ke liye */
+    color: #fff;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* JOIN Button Styling */
+.subscribe-form button {
+    background-color: #C5A021; /* PURE GOLD */
+    color: #000;
+    border: 1px solid #C5A021;
+    padding: 0 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap; /* Text ko wrap nahi hone dega */
+    transition: all 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #C5A021;
+    border-color: #C5A021;
+}
+
+/* --- Responsive Fix for Mobile --- */
+@media (max-width: 768px) {
+    .subscribe-form {
+        flex-direction: column; /* Mobile par upar niche */
+        height: auto;
+        gap: 10px;
+    }
+
+    .subscribe-form input {
+        border-right: 1px solid #444; /* Mobile par border wapis */
+        height: 45px;
+    }
+
+    .subscribe-form button {
+        height: 45px;
+        width: 100%; /* Mobile par full width button */
+    }
+}
