@@ -31,7 +31,7 @@ const item = [
         name: "The Royal Emerald", 
         price: "$249.00", 
         desc: "Handcrafted excellence with silver plating. This masterpiece features a mesmerizing emerald-cut centerpiece designed for those who value true elegance.", 
-        img: "/images/25 (19).jpeg",
+        img: "images/25 (19).jpeg",
         mat: "Shiny and Bright Stone",
         stone: "Semi-Precious Emerald"
     },
@@ -40,7 +40,7 @@ const item = [
         name: "Imperial Glow", 
         price: "$180.00", 
         desc: "A stunning set that radiates luxury. Perfect for evening events, these earrings are designed to catch the light from every angle with imperial grace.", 
-        img: "/images/25 (7).jpeg",
+        img: "images/25 (7).jpeg",
         mat: "Gold Plated Silver",
         stone: "Zirconia Crystals"
     },
@@ -49,7 +49,7 @@ const item = [
         name: "Bow Pearl Necklace", 
         price: "$340.00", 
         desc: "Elegant and playful, this bow necklace features high-quality pearls. A timeless piece that adds a touch of sophisticated charm to any outfit.", 
-        img: "/images/25 (3).jpeg",
+        img: "images/25 (3).jpeg",
         mat: "14k Gold Finish",
         stone: "Freshwater Pearls"
     },
@@ -58,7 +58,7 @@ const item = [
         name: "Vintage Red Zarkoon", 
         price: "$550.00", 
         desc: "Embrace the vintage era with this deep red Zarkoon masterpiece. Detailed craftsmanship meets traditional design for a truly decent look.", 
-        img: "/images/25 (4).jpeg",
+        img: "images/25 (4).jpeg",
         mat: "Antique Brass Base",
         stone: "Ruby Red Zarkoon"
     },
@@ -67,7 +67,7 @@ const item = [
         name: "Elegent Pearls", 
         price: "$300.00", 
         desc: "Extra shiny finish with selected pearls. This ring set is designed for durability and maximum sparkle, making it a favorite for daily luxury.", 
-        img: "/images/25 (5).jpeg",
+        img: "images/25 (5).jpeg",
         mat: "Sterling Silver",
         stone: "Premium Pearls"
     },
@@ -76,7 +76,7 @@ const item = [
         name: "Butterflies Braclets", 
         price: "$440.00", 
         desc: "Delicate butterflies linked in a timeless golden string. This bracelet represents freedom and beauty, handcrafted to fit perfectly on your wrist.", 
-        img: "/images/25 (12).jpeg",
+        img: "images/25 (12).jpeg",
         mat: "Pure Gold Plating",
         stone: "Miniature Diamonds"
     }
